@@ -1,0 +1,9 @@
+    Access key ID
+AKIAYKJEUWLZFBZ4J6RR
+    Secret access key
+        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
+        https://adipratapaws.signin.aws.amazon.com/console
+
+
+
+        for(int i=1; i<=n&&n&i==0; i=i+1;)
