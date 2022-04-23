@@ -1,30 +1,28 @@
 package com.company;
-import java.util.Locale;
+
 import java.util.Scanner;
-import java.math.*;
+
+import javax.print.FlavorException;
 
 public class rough2 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
+   Scanner scan = new Scanner(System.in);
+   int k = scan.nextInt();
 
-        for (int i = 1; i <= num; i++) {
-            for (int p = 1; p <= i; p++) {
-                System.out.print("*");
-            }for (int o = 1; o<=num-i; o --){
-                System.out.print(" ");}
-//            }for (int k = 1; k<=num - i; k --){
-//                System.out.print(" ");
-//            }for (int m = 1; m<=i; m++){
-//                System.out.print("*");
-//            }
-                System.out.println();
+   int []array = {32, 656, 65,98,54,21,3};
+   
 
+   Boolean bool = false;
+   for (int m = 0; m <array.length; m++){
+       if (array[m] == k){
+           bool = true;
             }
+       }
+       if (bool == true){
+           System.out.println("Value is present in the array");
+       }else{
+           System.out.println("Value is not present");
+       }
+   }
 
-        }
     }
-
-
-
-
