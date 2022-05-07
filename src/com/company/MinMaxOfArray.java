@@ -12,11 +12,11 @@ public class MinMaxOfArray {
 		 int minimum = 0;
 		    int maximum = 0;
 		    int smallest = 0;
+		    int largest=0;
 		    
 		    int leftpointer = 0;
 		    int rightpointer = arr.length-1;
-//		    for (int i =0 ; i < arr.length; i++){
-//		    if (arr.length %2 == 0)	
+//		    
 		    	while (leftpointer< rightpointer) {
 		    		if (arr[leftpointer] < arr[rightpointer]) {
 		    			smallest = arr[leftpointer];
@@ -28,7 +28,21 @@ public class MinMaxOfArray {
 		    		}
 		    		
 		    }
-		    System.out.println(smallest);
-	}
-
+		    System.out.println("Smallest: "+smallest);
+	
+	 int leftpointer1 = 0;
+	 int rightpointer1 = arr.length-1;
+	while (leftpointer1< rightpointer1) {
+		if (arr[leftpointer1] < arr[rightpointer1]) {
+			largest = arr[rightpointer1];
+			leftpointer1 ++;
+			
+		}else {
+			largest = arr[leftpointer1];
+			rightpointer1 --;
+		}
+		
+}
+System.out.println("largest: "+largest);
+}
 }
